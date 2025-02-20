@@ -1,66 +1,61 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Reģistējoties norāda struktūs, no kā vēlāk tis veidots departaments
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/fd2b561f-5259-4fb2-89c0-0f2023100e95" />
 
-## About Laravel
+Pēc reģistrēšanās tiek parārādīts zemāk redzamais logs lūdz lietotājam tiek piešķirtas tiesības 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![image](https://github.com/user-attachments/assets/527c8a26-ee1e-42f8-9cfc-9dd3d3104b82)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Lietotāju un lomu skatu redz tikai Admins un lietotājs ar tiesībām Can assign roles.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![image](https://github.com/user-attachments/assets/60813efd-2909-4ec6-a93b-01bbc61a2a34)
 
-## Learning Laravel
+ja lietotājm nav kāda no tiesībām Create, Edit, Delete, tad lietotāja skatā neparāgās darbības pogas. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![image](https://github.com/user-attachments/assets/fd017788-79cc-4dd2-be3e-e7df52c551f9)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Users skatā  ir poga uz Departments.
+![image](https://github.com/user-attachments/assets/c6be34be-3ed4-4c86-8230-a9b35dab1d60)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Uzpiežot atveras Dapartamentu sarakst ar aprakstu
 
-## Laravel Sponsors
+![image](https://github.com/user-attachments/assets/d3352831-7d57-4073-8548-5e527a782778)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+izveidot jaunu nodaļu var izvēloties no saraksta kas veidojas no reģistrācijas laikā aizpildītās sruktūras datiem. 
 
-### Premium Partners
+![image](https://github.com/user-attachments/assets/8bdf009c-bac7-45b0-8846-443481f36581)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Kad tiek saglabāts nodalas aprakst tas vairs neparādas izkrītošajā sarakstā
+![image](https://github.com/user-attachments/assets/7d05ae58-8afc-40be-aef5-982b5526ae8d)
 
-## Contributing
+Resursu tabulas augšējā daļā ir redams Reursu kopsavilkums status atrašanās vieta
+![image](https://github.com/user-attachments/assets/c2ad9a20-0aa9-4b53-b8ba-b011012c392f)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Apakšējā daļa ir iespējams labot vai dzēst konkētu resursu, ja ir atbilstošas tiesības.
+![image](https://github.com/user-attachments/assets/22aa2ce2-c4d3-4751-a932-a864efed09e7)
 
-## Code of Conduct
+Resursu izveides lapas aušpisē redzami visi resursi, tāpat iepriekšējā skatā. Apakšējā dalā var pievienot jaunus resursus. Izveidojot jaunu resursu ierakstu status un Assigned department aizpildas automātiski, atbilstoši Available un Warehouse.
+![image](https://github.com/user-attachments/assets/db060b28-1e40-4d64-af00-534809285eff)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Pasākumu skatā redzami izveidotie Pasākumi un tiem pievienotie resursi.
+![image](https://github.com/user-attachments/assets/29d34c62-c133-45cc-85be-f4aaf8b1a704)
 
-## Security Vulnerabilities
+Nevar izveidot pasākumu, ja tas sākuma laiks ir vecāks par šodienu un beigu laiks ir mazāks sākuma laiku
+![image](https://github.com/user-attachments/assets/f8d56202-e8bd-4c76-9437-65d9e77d9bee)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Resursu pievienošanas lapas augša var redzēt kādam pasākumam tiks pievienots resurs un kādam departamentam. Tam seko pieejamo resursu kopsavilkums ar statusu Available. Nevar pievienot vairāk resursus nekā sarakstā norādīts. Pēc katra resursa pievienošanas pieejamo resursu saraksts atjauojas. 
+![image](https://github.com/user-attachments/assets/4628120b-d0dd-47a6-9929-95417ba4fad9)
 
-## License
+Pēcresursu pievienošanas pasākumam resursu skatā resursam automātiski nomainas status uz In Use un departamens kam piešķirts.
+![image](https://github.com/user-attachments/assets/6f2bef75-b60f-4088-be06-ea820e3d91ce)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pēc pasākuma beigām jāievada atlikušās munīcijas daudzums un nospiežor pogu return Resources resursi tiek atriesti ar statusu Maintenance un departaments atrašanās vieta nomainas uz Warehouse maintenance center (from LVA Brigade B). Iekavās no kura departamenta pasākuma tas ir.
+
+Kad resursu tabula labo resursu statusu no Maintenance un Available artašanās vieta nomainas uz Warehouse
+
+Pasākumu skatā uzpiežot pogu print tiek lekuplādēt pdf failā pasākumi grupēti pa nodaļām un sakārtoti pēc sākuma datuma.
+
+![image](https://github.com/user-attachments/assets/91390821-2745-4372-893e-4bcbea746df4)
+
+
+

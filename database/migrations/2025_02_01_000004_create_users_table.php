@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name', 191);
             $table->string('email',191)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password', 191);
             $table->rememberToken();
             $table->boolean('active')->default(false);
             $table->enum('country',['-','EST','LVA','LTU']);

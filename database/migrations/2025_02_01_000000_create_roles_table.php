@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
-            $table->string('role')->unique();
+            $table->string('role', 191)->unique();
             $table->boolean('active')->default(true);
             $table->boolean('can_assign_roles')->default(false);
             $table->boolean('create')->default(false);

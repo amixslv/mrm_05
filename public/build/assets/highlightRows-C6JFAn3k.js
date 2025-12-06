@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("table").forEach(t=>{const e=t.querySelectorAll("tbody tr");e.forEach(c=>{c.addEventListener("click",function(){e.forEach(o=>o.classList.remove("selected")),this.classList.add("selected")})})})});

@@ -1,0 +1,31 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BrJqJ96X.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/Delete.js": {
+    "file": "assets/Delete-l0sNRNKZ.js",
+    "name": "Delete",
+    "src": "resources/js/Delete.js",
+    "isEntry": true
+  },
+  "resources/js/Search.js": {
+    "file": "assets/Search-BPDBgsy4.js",
+    "name": "Search",
+    "src": "resources/js/Search.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CAkSn3BF.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/highlightRows.js": {
+    "file": "assets/highlightRows-C6JFAn3k.js",
+    "name": "highlightRows",
+    "src": "resources/js/highlightRows.js",
+    "isEntry": true
+  }
+}

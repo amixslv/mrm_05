@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('responsible_department');
+            $table->string('name', 191);
+            $table->string('responsible_department', 191);
             $table->dateTime('start_date_time');
             $table->dateTime('end_date_time');
             $table->enum('status', ['Planned', 'In Progress', 'Completed']);

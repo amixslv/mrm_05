@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('resources', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name', 191);
             $table->enum('type', ['Vehicle', 'Weapon', 'Equipment', 'Ammo']);
             $table->integer('quantity');
             $table->enum('status', ['Available', 'In use', 'Maintenance', 'Write off']);
-            $table->string('assigned_department');
+            $table->string('assigned_department', 191);
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });

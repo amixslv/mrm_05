@@ -8,7 +8,9 @@
         <title>{{ $pageTitle ?? config('app.name') }} | {{ request()->getHost() }}</title>
 
         <!-- Favicon -->
-        <link rel="icon" href="{{ asset('images/mrm.png') }}" type="image/png">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/mrm.png') }}">
+
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

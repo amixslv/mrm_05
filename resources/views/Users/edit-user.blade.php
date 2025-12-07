@@ -1,21 +1,21 @@
 @if (auth()->user() && auth()->user()->role->edit)
     <x-app-layout>
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                 {{ $pageTitle }}
             </h2>
         </x-slot>
 
-        <x-eclayout>
+        <x-ec>
             <form method="POST" action="{{ route('users.update', $user->id) }}">
                 @csrf
                 @method('PUT')
                 <div class="flex flex-wrap justify-center space-x-4">
-                    <div class="m-4">                            
+                    <div class="m-4">
                         <x-input-label for="name" :value="__('Name')" />
                         <x-text-input id="name" name="name" type="text" :value="$user->name" required autofocus autocomplete="name" />
                         <x-input-error class="mt-2" :messages="$errors->get('name')" />
-                    </div>                        
+                    </div>
                     <div class="m-4">
                         <x-input-label for="name" :value="__('Email')" />
                         <x-text-input id="email" name="email" type="email" :value="$user->email" required autocomplete="email" />
@@ -35,7 +35,7 @@
                         </x-select>
                         <x-input-error class="mt-2" :messages="$errors->get('role')" />
                     </div>
-                    
+
                     <div class="m-4">
                         <x-input-label for="active" :value="__('Active')"/>
                         <x-checkbox id="active" name="active" :checked="$user->active"/>
@@ -81,7 +81,7 @@
                     <x-button type="submit">Update</x-button>
                 </div>
             </form>
-        </x-eclayout>
+        </x-ec>
     </x-app-layout>
 @elseif (!auth()->user()->active || !auth()->user()->role)
     @php

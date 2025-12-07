@@ -1,11 +1,11 @@
 @if (auth()->user() && auth()->user()->role && auth()->user()->role->edit)
     <x-app-layout>
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                 {{ $pageTitle }}
             </h2>
         </x-slot>
-        <x-eclayout>
+        <x-ec>
             <form method="POST" action="{{ route('resources.update',$resource->id) }}">
                 @csrf
                 @method('PUT')
@@ -40,10 +40,10 @@
                     </div>
                 </div>
                 <div class="flex justify-end">
-                    <x-button type="submit" class="bg-gray-500 text-white px-4 py-2 rounded-md">Update</x-button>
+                    <x-button type="submit" class="px-4 py-2 text-white bg-gray-500 rounded-md">Update</x-button>
                 </div>
             </form>
-        </x-eclayout>
+        </x-ec>
     </x-app-layout>
 @else
     @if (!auth()->user()->active && !auth()->user()->role)

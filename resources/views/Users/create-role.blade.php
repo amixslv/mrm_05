@@ -2,32 +2,32 @@
 @if (auth()->user() && auth()->user()->role->create)
     <x-app-layout>
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                 {{ $pageTitle }}
             </h2>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Active - to allow this right to be granted to the user
             </p>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Can be assigned roles – to allow user and role views
             </p>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Create - to allow the user group to create new records
             </p>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Edit - to allow the user group to edit records
             </p>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Delete - to allow the user group to delete records
             </p>
-            <p class="pl-7 text-gray-800 dark:text-gray-200">
+            <p class="text-gray-800 pl-7 dark:text-gray-200">
                 Cleaner - Access to resources with status - Maintenance (additionally requires edit rights)
             </p>
         </x-slot>
-        <x-eclayout>
+        <x-ec>
             <form method="POST" action="{{ route('roles.store') }}">
                 @csrf
-                <div class=" flex flex-wrap justify-center space-x-4">
+                <div class="flex flex-wrap justify-center space-x-4 ">
                     <div class="m-4">
                         <x-input-label for="role">Role</x-input-label>
                         <x-text-input type="text" name="role" id="role" required autofocus/>
@@ -69,8 +69,8 @@
                     <x-button type="submit">Create</x-button>
                 </div>
             </form>
-            
-        </x-eclayout>
+
+        </x-ec>
     </x-app-layout>
 @elseif (!auth()->user()->active || !auth()->user()->role)
         @php

@@ -2,11 +2,11 @@
 @if (auth()->user() && auth()->user()->role && auth()->user()->role->create)
     <x-app-layout>
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                 {{ $pageTitle }}
             </h2>
         </x-slot>
-        <x-eclayout>
+        <x-ec>
             <form method="POST" action="{{ route('events.store') }}">
                 @csrf
                 <div class="flex flex-wrap justify-center space-x-4">
@@ -52,7 +52,7 @@
                     <x-button type="button" onclick="window.location='{{ route('events.index') }}'">Close</x-button>
                 </div>
             </form>
-        </x-eclayout>
+        </x-ec>
     </x-app-layout>
 @else
     @if (!auth()->user()->active && !auth()->user()->role)

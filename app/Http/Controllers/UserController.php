@@ -38,7 +38,7 @@ class UserController extends Controller
     $enumStructure = $this->enumService->getEnumValues('users', 'structure');
     $enumSubStructure = $this->enumService->getEnumValues('users', 'sub_structure');
     $pageTitle = 'Users';
-    return view('users.edit-user', compact('user', 'roles', 'pageTitle', 'enumCountry', 'enumStructure', 'enumSubStructure'));
+    return view('Users.edit-user', compact('user', 'roles', 'pageTitle', 'enumCountry', 'enumStructure', 'enumSubStructure'));
 }
 
 

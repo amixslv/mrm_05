@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Services\enumService;
+use App\Services\EnumService;
 
 class UserController extends Controller
 {
@@ -24,7 +24,7 @@ class UserController extends Controller
         $columns = $this->userService->getUserTableColumns();
         $pageTitle = 'Users';
 
-        
+
         $columns[] = 'department';
         $columns[] = 'role';
         return view('Users.users', compact('users', 'columns', 'pageTitle'));

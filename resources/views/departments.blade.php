@@ -1,13 +1,13 @@
 @if (auth()->user()->active && auth()->user()->role)
     <x-app-layout>
         <x-slot name="header">
-            <div class="mb-4 flex justify-start">
-                <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            <div class="flex justify-start mb-4">
+                <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                     {{ $pageTitle }}
                 </h2>
             </div>
-           
-            <div class="mb-4 flex justify-end items-center">
+
+            <div class="flex items-center justify-end mb-4">
                 <x-text-input type="text" id="search" placeholder="Search departments..."/>
                 @if (auth()->user() && auth()->user()->role && auth()->user()->role->create)
                     <form action="{{ route('departments.create') }}" method="get" class="inline">
@@ -19,7 +19,7 @@
 
         <x-table >
             <thead>
-                
+
                 @foreach ($columns as $column)
                     @if (!in_array($column, ['id', 'created_at', 'updated_at', 'user_id']))
                         <x-th>
@@ -47,7 +47,7 @@
 
                         @if (auth()->user() && auth()->user()->role && auth()->user()->role->edit)
                             <x-td>
-                                <a href="{{ route('departments.edit', $department->id) }}" class="ml-2 bg-gray-500 text-white px-4 py-2 rounded-md">Edit</a>
+                                <a href="{{ route('departments.edit', $department->id) }}" class="px-4 py-2 ml-2 text-white bg-gray-500 rounded-md">Edit</a>
                             </x-td>
                         @endif
 
@@ -65,7 +65,7 @@
             </tbody>
         </x-table>
 
-        @vite(['resources/js/Search.js','resources/js/Delete.js','resources/js/highlightRows.js']) 
+        @vite(['resources/js/Search.js','resources/js/Delete.js','resources/js/highlightRows.js'])
 
     </x-app-layout>
 @else

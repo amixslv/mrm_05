@@ -1,4 +1,4 @@
-Reģistējoties norāda struktūs, no kā vēlāk tis veidots departaments
+Reģistējoties norāda struktūs, no kā vēlāk tiks veidots departaments
 
 <img width="385" alt="image" src="https://github.com/user-attachments/assets/fd2b561f-5259-4fb2-89c0-0f2023100e95" />
 

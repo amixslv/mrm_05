@@ -1,3 +1,5 @@
+Iztestēt visas iespējas var mājaslapā: https://laravel.a-mix.lv admin piekļūve: admin@example.com parole: 12345678
+
 Reģistējoties norāda struktūs, no kā vēlāk tiks veidots departaments. lietottājus var inportēr arī automātiski, ja nepieciešams ievadīt lielu daudzumu vienlaikus.
 
 <img width="385" alt="image" src="https://github.com/user-attachments/assets/fd2b561f-5259-4fb2-89c0-0f2023100e95" />

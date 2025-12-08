@@ -61,5 +61,5 @@ Pasākumu skatā uzpiežot pogu print tiek lekuplādēt pdf failā pasākumi gru
 ![image](https://github.com/user-attachments/assets/91390821-2745-4372-893e-4bcbea746df4)
 
 Iztestēt visas iespējas var mājaslapā: https://laravel.a-mix.lv
-admin piekļūve: admin@example.com parole: 12345678
+admin piekļūve: admin@example.com parole: 12345678<br>
 Apmēram reizi mēnesī testa dati tiks izdzēsti un atjaunots uz sākotnējo stāvokli.

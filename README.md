@@ -1,4 +1,4 @@
-Iztestēt visas iespējas var mājaslapā: https://laravel.a-mix.lv admin piekļūve: admin@example.com parole: 12345678
+Iztestēt visas iespējas var mājaslapā: https://laravel.a-mix.lv admin piekļūve: admin@example.com parole: 12345678 <br>
 Apmēram reizi mēnesī testa dati tiks izdzēsti un atjaunots uz sākotnējo stāvokli.
 
 Reģistējoties norāda struktūs, no kā vēlāk tiks veidots departaments. lietottājus var inportēr arī automātiski, ja nepieciešams ievadīt lielu daudzumu vienlaikus.

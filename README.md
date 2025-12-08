@@ -1,4 +1,4 @@
-Reģistējoties norāda struktūs, no kā vēlāk tiks veidots departaments
+Reģistējoties norāda struktūs, no kā vēlāk tiks veidots departaments. lietottājus var inportēr arī automātiski, ja nepieciešams ievadīt lielu daudzumu vienlaikus.
 
 <img width="385" alt="image" src="https://github.com/user-attachments/assets/fd2b561f-5259-4fb2-89c0-0f2023100e95" />
 
@@ -10,11 +10,11 @@ Lietotāju un lomu skatu redz tikai Admins un lietotājs ar tiesībām Can assig
 
 ![image](https://github.com/user-attachments/assets/60813efd-2909-4ec6-a93b-01bbc61a2a34)
 
-ja lietotājm nav kāda no tiesībām Create, Edit, Delete, tad lietotāja skatā neparāgās darbības pogas. 
+ja lietotājm nav kāda no tiesībām Create, Edit, Delete, tad lietotāja skatā neparādās darbības pogas. 
 
 ![image](https://github.com/user-attachments/assets/fd017788-79cc-4dd2-be3e-e7df52c551f9)
 
-Users skatā  ir poga uz Departments.
+Users skatā ir poga uz Departments.
 ![image](https://github.com/user-attachments/assets/c6be34be-3ed4-4c86-8230-a9b35dab1d60)
 
 Uzpiežot atveras Dapartamentu sarakst ar aprakstu
@@ -25,10 +25,10 @@ izveidot jaunu nodaļu var izvēloties no saraksta kas veidojas no reģistrācij
 
 ![image](https://github.com/user-attachments/assets/8bdf009c-bac7-45b0-8846-443481f36581)
 
-Kad tiek saglabāts nodalas aprakst tas vairs neparādas izkrītošajā sarakstā
+Kad tiek saglabāts nodaļas aprakst, tas vairs neparādas izkrītošajā sarakstā
 ![image](https://github.com/user-attachments/assets/7d05ae58-8afc-40be-aef5-982b5526ae8d)
 
-Resursu tabulas augšējā daļā ir redams Reursu kopsavilkums status atrašanās vieta
+Resursu tabulas augšējā daļā ir redzams Reursu kopsavilkums status atrašanās vieta
 ![image](https://github.com/user-attachments/assets/c2ad9a20-0aa9-4b53-b8ba-b011012c392f)
 
 Apakšējā daļa ir iespējams labot vai dzēst konkētu resursu, ja ir atbilstošas tiesības.
@@ -57,5 +57,6 @@ Pasākumu skatā uzpiežot pogu print tiek lekuplādēt pdf failā pasākumi gru
 
 ![image](https://github.com/user-attachments/assets/91390821-2745-4372-893e-4bcbea746df4)
 
-
+Iztestēt visas iespējas var mājaslapā: https://laravel.a-mix.lv
+admin piekļūve: admin@example.com parole: 12345678
 
